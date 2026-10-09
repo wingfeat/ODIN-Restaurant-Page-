@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+}
+
+header {
+  background-color: #c0392b;
+  padding: 16px;
+
+  nav {
+    display: flex;
+    gap: 8px;
+  }
+}
+
+button {
+  background: none;
+  border: 2px solid white;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  :hover {
+    background-color: white;
+    color: #c0392b;
+  }
+}
+
+#content {
+  max-width: 800px;
+  margin: 48px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+}
+
+/* à ajouter dans styles.css */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.menu-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu-card span {
+  font-size: 2.5rem;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 1.1rem;
+  margin-top: 16px;
+}
